@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="index.css">
+	<script src="Script.js"></script>
+	<script src="Script2.js"></script>
+    <script src="NumberSplit.js"></script>
+    <title>Home</title>
+</head>
+
+<body onload ="init();">
+
+	<header>
+		<hgroup>
+			<h1>my testing website</h1>
+			<h2></h2>
+			<h3>for learning how to code websites in HTML5 and CSS3 (no starting templete)</h3>
+			<h3></h3>
+		</hgroup>
+		
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a id = "contact" href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		
+	</header>
+	
+	<section>
+		<article>
+
+			<h2>Home</h2>
+			<p>
+				Welcome to the Home page. Examples of HTML styled with CSS and animated with Javascript lay all over this page.
+                If you want to see the code, right click the page and select "Inspect Element".
+			</p>
+
+			<hr>
+
+			<h2>HTML Tags</h2>
+			<div id = "tags">
+				&lth1&gt &lth2&gt &lth3&gt &ltp&gt &ltarticle&gt &ltsection&gt &ltbr&gt  &ltfigure&gt &ltfigcaption&gt &ltimg src=alt=&gt
+				&lta href=&gt &lthead&gt &ltbody&gt &ltfooter&gt &lthgroup&gt &ltnav&gt &ltul&gt &ltli&gt &ltlink rel= type= href= media=&gt &ltol&gt 
+				&ltaside&gt &ltsmall&gt &ltbutton&gt &ltem&gt &lthr&gt &lthtml&gt &ltcanvas&gt &lt&gt &lt&gt &lt&gt 
+				&lt&gt &lt&gt &lt&gt &lt&gt &lt&gt &lt&gt &lt&gt &lt&gt &lt&gt &lt&gt 
+				&lt&gt &lt&gt &lt&gt &lt&gt &lt&gt &lt&gt &lt&gt &lt&gt &lt&gt &lt&gt 
+				&lt&gt &lt&gt &lt&gt &lt&gt &lt&gt &lt&gt &lt&gt &lt&gt &lt&gt &lt&gt 
+				&lt&gt &lt&gt &lt&gt &lt&gt &lt&gt &lt&gt &lt&gt &lt&gt &lt&gt &lt&gt 
+			<br>
+				
+			</div>
+			
+			<hr>
+			
+			<h2>List</h2>
+			<ol>
+				<li>&+l+t = &lt</li>
+				<li>&+g+t = &gt</li>
+				<li>&lt;!DOCTYPE html&gt;</li>
+				<li>&lt;html lang="en"&gt;</li>
+				<li>&ltmeta charset="utf-8"&gt</li>
+			</ol>
+			
+			<hr>
+			
+			<h2>Image with figcaption</h2>
+			<figure>
+                <img src ="html5css3.png" alt ="Image of HTML5 and CSS3 logos">
+				<figcaption>Figure 1. image</figcaption>
+			</figure>
+			
+			<hr>
+			
+			<h2>Javascript</h2>
+			<canvas id = "myCanvas" width = 800 height = 500 style="border:1px solid #000000;"><p>Canvas not supported</p></canvas>
+			<br>
+			<button onclick="displayAlert();">alert</button>
+            <br>
+            <h3>A method converted from Java into JavaScript</h3>
+            <p>Enter a number 1-20
+                <input id="numb" type="number">
+                <button type="button" onclick="numberSpliter(document.getElementById('numb').value)">Submit</button>
+            </p> 
+            <div id="numbersplitoutput">Output: <br></div>
+
+		</article>
+	</section>
+	
+	<footer>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+			
+		<small>&copy; thanatcha</small>
+	</footer>
+</body>
+</html>
