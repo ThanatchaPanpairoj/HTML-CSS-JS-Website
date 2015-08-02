@@ -7,6 +7,33 @@
 	<script src="Script.js"></script>
 	<script src="Script2.js"></script>
     <script src="NumberSplit.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script>
+    src="http://maps.googleapis.com/maps/api/js">
+    </script>
+
+<script>
+    function initialize() {
+        var myCenter = new google.maps.LatLng(37.8719063,-122.2585393);
+        var marker;
+        var mapProp = {
+            center: myCenter,
+            zoom: 15,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+
+        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+        var marker = new google.maps.Marker({
+            position: myCenter,
+            animation: google.maps.Animation.BOUNCE
+        });
+
+        marker.setMap(map);
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
     <title>Home</title>
 </head>
 
@@ -88,7 +115,10 @@
             <div id="numbersplitoutput">Output: <br></div>
 
 		</article>
-	</section>
+        <br>
+        <h2>Google Maps API</h2>
+           <div id="googleMap" style="width:500px;height:380px;"></div>
+    	</section>
 	
 	<footer>
 		<nav>
